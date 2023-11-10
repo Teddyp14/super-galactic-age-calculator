@@ -4,6 +4,6 @@ export default class GalacticAge {
     }
 
     mercuryAge() {
-
+        return parseFloat((this.earthAge * (365 / 88)).toFixed(2));
     }
 }
