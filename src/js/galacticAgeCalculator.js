@@ -31,7 +31,7 @@ export class GalacticAge {
     }
 
     marsAge() {
-        return parseFloat((this.earthAge * (365 / 687)).toFixed(2));
+        return marsYears(this.earthAge)
     }
 
     jupiterAge() {
