@@ -56,6 +56,6 @@ describe("planetYearsUntilFutureAge", () => {
         49.77 Mercury years have yet to pass, 
         19.47 Venus years have yet to pass, 
         6.38 Mars years have yet to pass, 
-        and 1.18 Jupiter years have yet to pass before you turn 40.`)
+        and 1.01 Jupiter years have yet to pass before you turn 40.`)
     });
 });
