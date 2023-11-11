@@ -46,5 +46,16 @@ describe("planetYearsSincePrevAge", () => {
         22.71 Venus years have passed, 
         7.44 Mars years have passed, 
         and 1.18 Jupiter years have passed.`)
-    })
-})
+    });
+});
+
+describe("planetYearsUntilFutureAge", () => {
+    test("should return the number of years for each planet that have passed before the user reaches a future age.", () => {
+        const spaceAges = new GalacticAge(28, 14, 40);
+        expect(spaceAges.planetYearsUntilFutureAge()).toEqual(`12 Earth years have yet to pass, 
+        49.77 Mercury years have yet to pass, 
+        19.47 Venus years have yet to pass, 
+        6.38 Mars years have yet to pass, 
+        and 1.18 Jupiter years have yet to pass before you turn 40.`)
+    });
+});

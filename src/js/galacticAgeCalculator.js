@@ -34,4 +34,8 @@ export default class GalacticAge {
         ${marsYearsPassed} Mars years have passed, 
         and ${jupiterYearsPassed} Jupiter years have passed.`
     }
+
+    planetYearsUntilFutureAge() {
+
+    }
 }
