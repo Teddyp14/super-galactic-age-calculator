@@ -14,3 +14,10 @@ describe("mercuryAge", () => {
         expect(spaceAges.mercuryAge()).toEqual(116.14);
     });
 });
+
+describe("venusAge", () => {
+    test("should return the user's age in Venus years.", () => {
+        const spaceAges = new GalacticAge(28);
+        expect(spaceAges.venusAge()).toEqual(45.42);
+    });
+});
