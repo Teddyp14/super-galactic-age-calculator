@@ -40,10 +40,10 @@ export class GalacticAge {
 
     planetYearsSincePrevAge() {
         const yearsPassed = this.earthAge - this.previousAge;
-        const mercuryYearsPassed = parseFloat((yearsPassed * (365 / 88)).toFixed(2));
-        const venusYearsPassed = parseFloat((yearsPassed * (365 / 225)).toFixed(2));
-        const marsYearsPassed = parseFloat((yearsPassed * (365 / 687)).toFixed(2));
-        const jupiterYearsPassed = parseFloat((yearsPassed * (365 / 4332)).toFixed(2));
+        const mercuryYearsPassed = mercuryYears(yearsPassed);
+        const venusYearsPassed = venusYears(yearsPassed);
+        const marsYearsPassed = marsYears(yearsPassed);
+        const jupiterYearsPassed = jupiterYears(yearsPassed);
 
         return `Since you were ${this.previousAge}, ${yearsPassed} Earth years have passed, 
         ${mercuryYearsPassed} Mercury years have passed, 
