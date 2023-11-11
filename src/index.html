@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+
 <head>
-    <title>Project Name</title>
+    <title>Super Galactic Age Calculator</title>
 </head>
+
+<body>
+    <h1>Discover your age across the solar system!</h1>
+
+    <form id="calculatorForm">
+        <label>How old are you?
+            <input type="number" id="userAge" min="0">
+        </label>
+        <h3>Get your age in: </h3>
+        <button id="mercuryAge">Mercury years</button>
+        <button id="venusAge">Venus years</button>
+        <button id="marsAge">Mars years</button>
+        <button id="jupiterAge">Jupiter years</button>
+
+        <label>Enter a previous age:
+            <input type="number" id="futureAge">
+        </label>
+        <button id="yearsSince">How long has it been?</button>
+
+        <label>Enter a future age:
+            <input type="number" id="previousAge">
+        </label>
+        <button id="yearsUntil">How long do I have to wait?</button>
+    </form>
+
+    <h2 id="results"></h2>
+
+</body>
+
+</html>

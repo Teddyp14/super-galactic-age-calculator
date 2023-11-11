@@ -1,8 +1,8 @@
 {
-  "name": "shape-tracker",
+  "name": "super-galactic-age-calculator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An application that will calculate your age based in the years of the selected planet.",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode=development",
     "start": "npm run build && webpack-dev-server --open --mode=development",
@@ -10,7 +10,7 @@
     "test": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "Teddy Peterschmidt",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.5",

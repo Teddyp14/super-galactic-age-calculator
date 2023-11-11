@@ -49,7 +49,7 @@ export class GalacticAge {
         ${mercuryYearsPassed} Mercury years have passed, 
         ${venusYearsPassed} Venus years have passed, 
         ${marsYearsPassed} Mars years have passed, 
-        and ${jupiterYearsPassed} Jupiter years have passed.`
+        and ${jupiterYearsPassed} Jupiter years have passed.`;
     }
 
     planetYearsUntilFutureAge() {
@@ -63,6 +63,6 @@ export class GalacticAge {
         ${mercuryYearsToPass} Mercury years have yet to pass, 
         ${venusYearsToPass} Venus years have yet to pass, 
         ${marsYearsYetToPass} Mars years have yet to pass, 
-        and ${jupiterYearsYetToPass} Jupiter years have yet to pass before you turn ${this.futureAge}.`
+        and ${jupiterYearsYetToPass} Jupiter years have yet to pass before you turn ${this.futureAge}.`;
     }
 }
