@@ -8,7 +8,7 @@ describe("mercuryYears", () => {
 
 describe("venusYears", () => {
     test("should return the number of Venus years passed since the value of the argument in Earth years", () => {
-        expect(mercuryYears(28)).toEqual(45.42);
+        expect(venusYears(28)).toEqual(45.42);
     });
 });
 
