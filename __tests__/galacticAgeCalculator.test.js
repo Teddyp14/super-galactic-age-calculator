@@ -41,6 +41,10 @@ describe("jupiterAge", () => {
 describe("planetYearsSincePrevAge", () => {
     test("should return the number of years the have passed for each planet since the user's age and a previous age.", () => {
         const spaceAges = new GalacticAge(28, 14);
-        expect(spaceAges.planetYearsSincePrevAge()).toEqual("Since you were 14, 14, Earth years have passed, 58.07 Mercury years have passed, 22.71 Venus years have passed, 7.44 Mars years have passed, and 1.18 Jupiter years have passed. ")
+        expect(spaceAges.planetYearsSincePrevAge()).toEqual(`Since you were 14, 14 Earth years have passed, 
+        58.07 Mercury years have passed, 
+        22.71 Venus years have passed, 
+        7.44 Mars years have passed, 
+        and 1.18 Jupiter years have passed.`)
     })
 })
