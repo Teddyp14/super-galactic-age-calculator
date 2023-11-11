@@ -10,8 +10,8 @@ export function marsYears(num) {
     return parseFloat((num * (365 / 687)).toFixed(2));
 }
 
-export function jupiterYears() {
-
+export function jupiterYears(num) {
+    return parseFloat((num * (365 / 4332)).toFixed(2));
 }
 
 export class GalacticAge {
