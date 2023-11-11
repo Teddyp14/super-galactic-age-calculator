@@ -20,4 +20,8 @@ export default class GalacticAge {
     jupiterAge() {
         return parseFloat((this.earthAge * (365 / 4332)).toFixed(2));
     }
+
+    planetYearsSincePrevAge() {
+
+    }
 }
