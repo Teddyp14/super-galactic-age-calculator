@@ -21,3 +21,10 @@ describe("venusAge", () => {
         expect(spaceAges.venusAge()).toEqual(45.42);
     });
 });
+
+describe("marsAge", () => {
+    test("should return the user's age in Mars years.", () => {
+        const spaceAges = new GalacticAge(28);
+        expect(spaceAges.marsAge()).toEqual(14.88);
+    });
+});

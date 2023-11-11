@@ -10,4 +10,8 @@ export default class GalacticAge {
     venusAge() {
         return parseFloat((this.earthAge * (365 / 225)).toFixed(2));
     }
+
+    marsAge() {
+
+    }
 }
