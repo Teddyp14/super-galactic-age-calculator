@@ -2,9 +2,9 @@ export function mercuryYears(num) {
     return parseFloat((num * (365 / 88)).toFixed(2));
 }
 
-export function venusYears(num) {
-
-}
+// export function venusYears(num) {
+//     return parseFloat((num * (365 / 225)).toFixed(2));
+// }
 
 export class GalacticAge {
 
