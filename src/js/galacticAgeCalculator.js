@@ -27,15 +27,15 @@ export class GalacticAge {
     }
 
     venusAge() {
-        return venusYears(this.earthAge)
+        return venusYears(this.earthAge);
     }
 
     marsAge() {
-        return marsYears(this.earthAge)
+        return marsYears(this.earthAge);
     }
 
     jupiterAge() {
-        return parseFloat((this.earthAge * (365 / 4332)).toFixed(2));
+        return jupiterYears(this.earthAge);
     }
 
     planetYearsSincePrevAge() {
