@@ -2,9 +2,11 @@ import GalacticAge from "../src/js/galacticAgeCalculator";
 
 describe("GalacticAge", () => {
 
-    test("should create an object that contains the user's Earth age.", () => {
-        const spaceAges = new GalacticAge(28);
+    test("should create an object that contains the user's Earth age, a previous age, and a future age.", () => {
+        const spaceAges = new GalacticAge(28, 14, 40);
         expect(spaceAges.earthAge).toEqual(28);
+        expect(spaceAges.previousAge()).toEqual(14);
+        expect(spaceAges.futureAge()).toEqual(40);
     });
 });
 
