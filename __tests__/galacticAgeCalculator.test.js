@@ -1,4 +1,8 @@
-import GalacticAge from "../src/js/galacticAgeCalculator";
+import { GalacticAge, mercuryYears } from "../src/js/galacticAgeCalculator";
+
+describe("mercuryYears", () => {
+    expect(mercuryYears(28)).toEqual(116.14)
+})
 
 describe("GalacticAge", () => {
 
