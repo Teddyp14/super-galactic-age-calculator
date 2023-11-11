@@ -1,5 +1,5 @@
 export function mercuryYears(num) {
-
+    return parseFloat((num * (365 / 88)).toFixed(2));
 }
 
 export class GalacticAge {
