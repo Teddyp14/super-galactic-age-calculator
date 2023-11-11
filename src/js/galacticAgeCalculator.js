@@ -23,7 +23,7 @@ export class GalacticAge {
     }
 
     mercuryAge() {
-        return parseFloat((this.earthAge * (365 / 88)).toFixed(2));
+        return mercuryYears(this.earthAge);
     }
 
     venusAge() {
