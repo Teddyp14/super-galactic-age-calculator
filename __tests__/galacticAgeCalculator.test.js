@@ -1,4 +1,4 @@
-import { GalacticAge, mercuryYears, venusYears, marsYears } from "../src/js/galacticAgeCalculator";
+import { GalacticAge, mercuryYears, venusYears, marsYears, jupiterYears } from "../src/js/galacticAgeCalculator";
 
 describe("mercuryYears", () => {
     test("should return the number of Mercury years passed since the value of the argument in Earth years", () => {
@@ -15,6 +15,12 @@ describe("venusYears", () => {
 describe("marsYears", () => {
     test("should return the number of Mars years passed since the value of the argument in Earth years", () => {
         expect(marsYears(28)).toEqual(14.88);
+    });
+});
+
+describe("jupiterYears", () => {
+    test("should return the number of Jupiter years passed since the value of the argument in Earth years", () => {
+        expect(jupiterYears(28)).toEqual(2.36);
     });
 });
 
