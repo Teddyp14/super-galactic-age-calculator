@@ -1,8 +1,12 @@
-import { GalacticAge, mercuryYears } from "../src/js/galacticAgeCalculator";
+import { GalacticAge, mercuryYears, venusYears } from "../src/js/galacticAgeCalculator";
 
 describe("mercuryYears", () => {
-    expect(mercuryYears(28)).toEqual(116.14)
-})
+    expect(mercuryYears(28)).toEqual(116.14);
+});
+
+describe("venusYears", () => {
+    expect(venusYears(28)).toEqual(45.42);
+});
 
 describe("GalacticAge", () => {
 
