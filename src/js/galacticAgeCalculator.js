@@ -1,6 +1,8 @@
 export default class GalacticAge {
-    constructor(earthAge) {
+    constructor(earthAge, previousAge, futureAge) {
         this.earthAge = earthAge;
+        this.previousAge = previousAge;
+        this.futureAge = futureAge;
     }
 
     mercuryAge() {
