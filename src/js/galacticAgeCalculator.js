@@ -54,10 +54,10 @@ export class GalacticAge {
 
     planetYearsUntilFutureAge() {
         const yearsYetToPass = this.futureAge - this.earthAge;
-        const mercuryYearsToPass = parseFloat((yearsYetToPass * (365 / 88)).toFixed(2));
-        const venusYearsToPass = parseFloat((yearsYetToPass * (365 / 225)).toFixed(2));
-        const marsYearsYetToPass = parseFloat((yearsYetToPass * (365 / 687)).toFixed(2));
-        const jupiterYearsYetToPass = parseFloat((yearsYetToPass * (365 / 4332)).toFixed(2));
+        const mercuryYearsToPass = mercuryYears(yearsYetToPass);
+        const venusYearsToPass = venusYears(yearsYetToPass);
+        const marsYearsYetToPass = marsYears(yearsYetToPass);
+        const jupiterYearsYetToPass = jupiterYears(yearsYetToPass);
 
         return `${yearsYetToPass} Earth years have yet to pass, 
         ${mercuryYearsToPass} Mercury years have yet to pass, 
