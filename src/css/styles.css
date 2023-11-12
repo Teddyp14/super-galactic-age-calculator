@@ -1,4 +1,54 @@
 body {
-    color: white;
-    background-color: rgb(63, 8, 95);
+    background-color: rgb(150, 114, 150);
+    background-position: center;
+    text-align: center;
+}
+
+.header {
+    background-image: url(../assets/images/solar_system.jpg);
+    background-size: 65% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    background-color: black;
+    height: 300px;
+}
+
+.header h2 {
+    transform: scaleX(-1);
+    float: right;
+    margin-top: 10px;
+    padding: 2%;
+    margin-right: 20%;
+    color: silver;
+}
+
+.header h1 {
+    transform: scaleX(-1);
+    float: left;
+    padding-left: 2%;
+    margin-right: 50%;
+    margin-top: 20px;
+    width: 40%;
+    font-size: 75px;
+    color: goldenrod;
+}
+
+.contents {
+    padding: 5%;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ageButton {
+    margin: 1%;
+}
+
+label {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
 }
