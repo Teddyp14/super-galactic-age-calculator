@@ -1,6 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import './css/styles.css';
+import './assets/images/mercury-gif.gif';
+import './assets/images/venus-gif.gif';
+import './assets/images/mars-gif.gif';
+import './assets/images/jupiter-gif.gif';
 import { GalacticAge } from "../src/js/galacticAgeCalculator";
 
 function createUserObject() {
@@ -13,65 +17,72 @@ function createUserObject() {
     return userObject;
 }
 
-function getMercuryAge() {
-    event.preventDefault();
+function getVariables() {
     const results = document.getElementById("results");
-    const userInfo = createUserObject();
+    const gifContainer = document.getElementById("gifContainer");
+    const gif = document.createElement("img");
+    let userInfo = createUserObject();
 
     results.innerText = "";
+    gifContainer.innerText = "";
 
-    results.append(`You are ${userInfo.mercuryAge()} Mercury years old!`);
+    return { results, gifContainer, gif, userInfo };
+}
+
+function getMercuryAge() {
+    event.preventDefault();
+    const variables = getVariables();
+
+    variables.results.append(`You are ${variables.userInfo.mercuryAge()} Mercury years old!`);
+    variables.gif.src = './assets/images/mercury-gif.gif';
+    variables.gif.alt = "Rotating Mercury.";
+    variables.gifContainer.append(variables.gif);
 }
 
 function getVenusAge() {
     event.preventDefault();
-    const results = document.getElementById("results");
-    const userInfo = createUserObject();
+    const variables = getVariables();
 
-    results.innerText = "";
-
-    results.append(`You are ${userInfo.venusAge()} Venutian years old!`);
+    variables.results.append(`You are ${variables.userInfo.venusAge()} Venutian years old!`);
+    variables.gif.src = './assets/images/venus-gif.gif';
+    variables.gif.alt = "Rotating Venus.";
+    variables.gifContainer.append(variables.gif);
 }
 
 function getMarsAge() {
     event.preventDefault();
-    const results = document.getElementById("results");
-    const userInfo = createUserObject();
+    const variables = getVariables();
 
-    results.innerText = "";
-
-    results.append(`You are ${userInfo.marsAge()} Martian years old!`);
+    variables.results.append(`You are ${variables.userInfo.marsAge()} Martian years old!`);
+    variables.gif.src = './assets/images/mars-gif.gif';
+    variables.gif.alt = "Rotating Mars.";
+    variables.gifContainer.append(variables.gif);
 }
 
 function getJupiterAge() {
     event.preventDefault();
-    const results = document.getElementById("results");
-    const userInfo = createUserObject();
+    const variables = getVariables();
 
-    results.innerText = "";
-
-    results.append(`You are ${userInfo.jupiterAge()} Juvian years old!`);
+    variables.results.append(`You are ${variables.userInfo.jupiterAge()} Juvian years old!`);
+    variables.gif.src = './assets/images/jupiter-gif.gif';
+    variables.gif.alt = "Rotating Jupiter.";
+    variables.gifContainer.append(variables.gif);
 }
 
 function getYearsSince() {
     event.preventDefault();
-    const results = document.getElementById("results");
-    let userInfo = createUserObject();
+    const variables = getVariables();
 
-    results.innerText = "";
-
-    results.append(userInfo.planetYearsSincePrevAge());
+    variables.results.append(variables.userInfo.planetYearsSincePrevAge());
 }
 
 function getYearsUntil() {
     event.preventDefault();
-    const results = document.getElementById("results");
-    let userInfo = createUserObject();
+    const variables = getVariables();
 
-    results.innerText = "";
-
-    results.append(userInfo.planetYearsUntilFutureAge());
+    variables.results.append(variables.userInfo.planetYearsUntilFutureAge());
 }
+
 
 document.getElementById("mercuryAge").addEventListener("click", getMercuryAge);
 document.getElementById("venusAge").addEventListener("click", getVenusAge);

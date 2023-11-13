@@ -2,15 +2,18 @@ body {
     background-color: rgb(150, 114, 150);
     background-position: center;
     text-align: center;
+    background-image: url(../assets/images/sparse_stars.jpg);
+    background-position: center;
 }
 
 .header {
     background-image: url(../assets/images/solar_system.jpg);
-    background-size: 65% auto;
+    background-size: 70% auto;
     background-position: right;
     background-repeat: no-repeat;
     transform: scaleX(-1);
     background-color: black;
+    font-family: orbitron;
     height: 300px;
 }
 
@@ -29,6 +32,7 @@ body {
     padding-left: 2%;
     margin-right: 50%;
     margin-top: 20px;
+    margin-bottom: 5%;
     width: 40%;
     font-size: 75px;
     color: goldenrod;
@@ -36,6 +40,8 @@ body {
 
 .contents {
     padding: 5%;
+    font-family: space mono;
+    color: silver;
 }
 
 button {
@@ -48,7 +54,19 @@ button {
 }
 
 label {
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 30%;
     margin-right: 30%;
     padding: 10px;
+}
+
+#results {
+    margin: 3%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
 }
