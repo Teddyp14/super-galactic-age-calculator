@@ -89,7 +89,7 @@ function getYearsSince() {
         variables.altResults.append("Sorry, no time traveling allowed!");
     } else {
         variables.altResults.append(variables.userInfo.planetYearsSincePrevAge());
-    };
+    }
 }
 
 function getYearsUntil() {
@@ -102,7 +102,7 @@ function getYearsUntil() {
         variables.altResults.append("Sorry, no time traveling allowed!");
     } else {
         variables.altResults.append(variables.userInfo.planetYearsUntilFutureAge());
-    };
+    }
 }
 
 
