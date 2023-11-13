@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import './css/styles.css';
+// import './assets/fonts/Orbitron/static/Orbitron-Bold.ttf';
+// import './assets/fonts/Space_Mono/SpaceMono-Regular.ttf';
 import './assets/images/mercury-gif.gif';
 import './assets/images/venus-gif.gif';
 import './assets/images/mars-gif.gif';
