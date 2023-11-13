@@ -11,28 +11,31 @@
     </div>
     <div class="contents">
         <form id="calculatorForm">
-            <label>How old are you?
-                <input type="number" id="userAge" min="0">
+            <label for="userAge">How old are you?
+                <input type="number" id="userAge" min="0" placeholder="your age">
             </label>
+
             <h3>Get your age in: </h3>
             <button class="ageButton" id="mercuryAge">Mercury years</button>
             <button class="ageButton" id="venusAge">Venus years</button>
             <button class="ageButton" id="marsAge">Mars years</button>
             <button class="ageButton" id="jupiterAge">Jupiter years</button>
 
-            <label>Enter a previous age:
-                <input type="number" id="futureAge">
-            </label>
+            <h2 id="results"></h2>
+            <div id="gifContainer"></div>
+
+            <label for="futureAge">How many years on each planet has it been since I was
+                <input type="number" id="previousAge" placeholder="a past age">
+                years old?</label>
             <button id="yearsSince">How long has it been?</button>
 
-            <label>Enter a future age:
-                <input type="number" id="previousAge">
-            </label>
+            <label for="previousAge">How many years on each planet will pass before I turn
+                <input type="number" id="futureAge" placeholder="a future age">
+                years old?</label>
             <button id="yearsUntil">How long do I have to wait?</button>
         </form>
 
-        <h2 id="results"></h2>
-        <div id="gifContainer"></div>
+        <h2 id="altResults"></h2>
 </body>
 
 </html>

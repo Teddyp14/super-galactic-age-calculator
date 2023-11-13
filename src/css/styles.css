@@ -63,7 +63,23 @@ label {
     padding: 10px;
 }
 
+#userAge {
+    width: 100px;
+}
+
+#previousAge {
+    width: 120px;
+}
+
+#futureAge {
+    width: 140px;
+}
+
 #results {
+    margin: 3%;
+}
+
+#altResults {
     margin: 3%;
 }
 
