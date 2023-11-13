@@ -112,5 +112,3 @@ document.getElementById("marsAge").addEventListener("click", getMarsAge);
 document.getElementById("jupiterAge").addEventListener("click", getJupiterAge);
 document.getElementById("yearsSince").addEventListener("click", getYearsSince);
 document.getElementById("yearsUntil").addEventListener("click", getYearsUntil);
-
-//comment to test commits 
